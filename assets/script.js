@@ -6,6 +6,23 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
+// Interactive tilt on the photo card (follows the cursor, snaps back on leave)
+const photoCard = document.querySelector(".photo-card");
+if(photoCard){
+  const maxTilt = 10;
+  photoCard.addEventListener("mousemove", (e) => {
+    const rect = photoCard.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    const rotateY = (x - 0.5) * maxTilt * 2;
+    const rotateX = (0.5 - y) * maxTilt * 2;
+    photoCard.style.transform = `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+  });
+  photoCard.addEventListener("mouseleave", () => {
+    photoCard.style.transform = "perspective(700px) rotateX(0deg) rotateY(0deg) scale(1)";
+  });
+}
+
 // Compétences tabs (used on competences.html)
 const competences = [
   {
