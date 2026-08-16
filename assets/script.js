@@ -99,7 +99,7 @@ const competences = [
       "Implanter un plan de merchandising défini par le réseau ou l'équipe de vente",
       "Optimiser les outils de GRC et le parcours client dans une approche omnicanale"
     ],
-    traces: ["Gestion du rayon Petit Meuble", "Décisions d'implantation — rayon Électroménager", "Ajustement des niveaux de stock"]
+    traces: ["Gestion du rayon Petit Meuble", "Décisions d'implantation, rayon Électroménager", "Ajustement des niveaux de stock"]
   },
   {
     id: "equipe",
@@ -158,9 +158,9 @@ if(tabsEl && panelsEl){
       </div>
       <div class="traces">
         <h4>Traces à venir</h4>
-        ${c.traces.map(t => `<div class="trace-slot">${t} — <em>à compléter (photos, captures, chiffres, annexes)</em></div>`).join("")}
+        ${c.traces.map(t => `<div class="trace-slot">${t} : <em>à compléter (photos, captures, chiffres, annexes)</em></div>`).join("")}
       </div>
-      <p class="autocritique">Autocritique : dans quel autre contexte devrais-je adapter cette compétence ? Quelles ressources me manquent encore ? — à rédiger.</p>
+      <p class="autocritique">Autocritique : dans quel autre contexte devrais-je adapter cette compétence ? Quelles ressources me manquent encore ? À rédiger.</p>
     `;
     panelsEl.appendChild(panel);
   });
