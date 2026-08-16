@@ -118,8 +118,19 @@ nav.links a.active::after{ width:100%; }
 
 /* ---------- Section shell ---------- */
 section{ max-width:1200px; margin:0 auto; padding:5rem 1.5rem; }
-section.alt{ background:var(--paper); max-width:none; }
+section.alt{ background:var(--ink); color:#fff; max-width:none; }
 section.alt > .inner{ max-width:1200px; margin:0 auto; padding:5rem 1.5rem;}
+section.alt h2.section-title{ color:#fff; }
+section.alt .section-lede{ color:#9BA0AC; }
+section.alt .card{ background:#1C1E24; border-color:rgba(255,255,255,0.08); }
+section.alt .card:hover{ box-shadow:0 14px 30px -18px rgba(0,0,0,0.5); }
+section.alt .card h3{ color:#fff; }
+section.alt .card ul li{ color:#B5B8C0; }
+section.alt .case-item{ background:#1C1E24; border-color:rgba(255,255,255,0.08); color:#fff; }
+section.alt .case-item:hover{ border-color:var(--red); }
+section.alt .case-item .ci-desc{ color:#9BA0AC; }
+section.alt .case-item .ci-arrow{ color:#6A6E78; }
+section.alt .suite-card{ background:#1C1E24; border:1px solid rgba(255,255,255,0.08); }
 .section-head{ display:flex; align-items:baseline; gap:.9rem; margin-bottom:2.6rem; }
 .section-head .idx{ font-family:var(--display); font-weight:800; color:var(--red); font-size:.95rem; }
 h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1.6rem,3vw,2.15rem); letter-spacing:-.01em; }
