@@ -66,41 +66,6 @@ const competences = [
     traces: ["Oral de négociation", "Stage BUT3", "Jeu Négociales"]
   },
   {
-    id: "relation-client",
-    tab: "Relation client",
-    title: "Manager la relation client",
-    intro: "Compétence évaluée sur les semestres 5 et 6.",
-    essentials: [
-      "Développer une culture partagée de service client",
-      "Piloter la satisfaction et l'expérience client dans une perspective durable",
-      "Valoriser le portefeuille client par l'exploitation des données dans le respect de la réglementation"
-    ],
-    criticalLearnings: [
-      "Asseoir la réussite de la relation client sur la cohérence globale de l'organisation (outils, processus, communication, structure)",
-      "Optimiser l'expérience client par un processus d'amélioration continue",
-      "Contribuer à la diffusion de la culture client au sein de l'organisation",
-      "Faire évoluer les outils de la relation client"
-    ],
-    traces: ["Utilisation Salesforce en rayon", "Suivi satisfaction client BUT Cabriès", "Stage BUT3"]
-  },
-  {
-    id: "strategie",
-    tab: "Stratégie",
-    title: "Participer à la stratégie marketing et commerciale de l'organisation",
-    intro: "Compétence évaluée sur les semestres 5 et 6.",
-    essentials: [
-      "Identifier les opportunités de développement les plus porteuses",
-      "Manager efficacement les équipes commerciales",
-      "Élaborer une offre adaptée au contexte sectoriel du client"
-    ],
-    criticalLearnings: [
-      "Mettre en œuvre la stratégie marketing et commerciale au sein de l'équipe",
-      "Fédérer les équipes autour de la réussite des objectifs marketing et commerciaux",
-      "Co-construire une offre en collaboration avec les parties prenantes (externes et internes)"
-    ],
-    traces: ["Jeu Bankéo", "Jeu Ariane", "SAE stratégie commerciale"]
-  },
-  {
     id: "espace-vente",
     tab: "Espace de vente",
     title: "Piloter un espace de vente",
