@@ -163,15 +163,12 @@ if(chapters.length){
   chapters.forEach(c => chapterObserver.observe(c));
 
   const storyNavItems = document.querySelectorAll(".story-nav li");
-  const storyFill = document.getElementById("storyFill");
   if(storyNavItems.length){
     const activeObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
           const id = entry.target.id.replace("chapter-", "");
           storyNavItems.forEach(li => li.classList.toggle("active", li.dataset.chapter === id));
-          const idx = Array.from(chapters).indexOf(entry.target);
-          if(storyFill){ storyFill.style.height = ((idx + 1) / chapters.length * 100) + "%"; }
         }
       });
     }, { rootMargin: "-35% 0px -55% 0px" });

@@ -230,11 +230,14 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
 /* ---------- Story (À propos) — chapters + sticky nav ---------- */
 .story-layout{ display:grid; grid-template-columns:190px 1fr; gap:3.5rem; align-items:start; max-width:900px; }
 .story-nav{ position:sticky; top:6rem; }
-.story-nav-track{ width:2px; height:70px; background:var(--line); border-radius:2px; margin-bottom:1.4rem; position:relative; }
-.story-nav-fill{ position:absolute; top:0; left:0; width:100%; height:0%; background:var(--red); border-radius:2px; transition:height .3s ease; }
 .story-nav ul{ list-style:none; display:flex; flex-direction:column; gap:1.1rem; }
-.story-nav li{ font-size:.85rem; font-weight:600; color:var(--ink-soft); cursor:default; transition:.2s ease; padding-left:.9rem; border-left:2px solid transparent; }
-.story-nav li.active{ color:var(--red); border-left-color:var(--red); }
+.story-nav li{ padding-left:.9rem; border-left:2px solid transparent; transition:.2s ease; }
+.story-nav li a{
+  font-size:.85rem; font-weight:600; color:var(--ink-soft);
+  text-decoration:none; display:block;
+}
+.story-nav li.active{ border-left-color:var(--red); }
+.story-nav li.active a{ color:var(--red); }
 .story-content{ display:flex; flex-direction:column; gap:2rem; }
 .chapter{
   position:relative; opacity:0; transform:translateY(28px);
@@ -278,7 +281,6 @@ footer{ padding:3rem 1.5rem 3.5rem; border-top:1px solid var(--line); margin-top
   .suite-card{ flex-direction:column; align-items:flex-start; }
   .story-layout{ grid-template-columns:1fr; }
   .story-nav{ position:static; display:flex; align-items:center; gap:1rem; margin-bottom:1rem; }
-  .story-nav-track{ display:none; }
   .story-nav ul{ flex-direction:row; flex-wrap:wrap; gap:.8rem; }
   .story-nav li{ border-left:none; border-bottom:2px solid transparent; padding-left:0; padding-bottom:.3rem; }
   .story-nav li.active{ border-bottom-color:var(--red); }
