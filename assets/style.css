@@ -68,6 +68,21 @@ nav.links a.active::after{ width:100%; }
   display:inline-block; font-size:.78rem; font-weight:700; color:var(--red);
   text-transform:uppercase; letter-spacing:.06em; margin-bottom:1.2rem;
 }
+.name-big{
+  font-family:var(--display); font-weight:800;
+  font-size:clamp(2.4rem, 5vw, 3.6rem);
+  letter-spacing:-.01em; color:var(--ink); text-transform:uppercase;
+}
+.tagline{
+  font-size:1.05rem; font-weight:600; color:var(--ink-soft); margin-top:.6rem;
+}
+.hero-quote{
+  border-left:3px solid var(--red); padding-left:1.2rem; margin:1.8rem 0;
+  font-family:var(--display); font-weight:700; color:var(--ink);
+  font-size:clamp(1.1rem, 2.2vw, 1.4rem); line-height:1.5;
+}
+.hero-meta{ display:flex; flex-direction:column; gap:.4rem; margin-bottom:1.8rem; }
+.hero-meta span{ font-weight:700; font-size:.95rem; color:var(--ink); }
 .hero-copy .intro-line{ font-size:1.15rem; font-weight:600; color:var(--ink); margin-bottom:1.4rem; }
 .axis-list{ list-style:none; display:flex; flex-direction:column; gap:.9rem; margin-bottom:1.6rem; }
 .axis-list li{
@@ -108,6 +123,7 @@ nav.links a.active::after{ width:100%; }
   transition:transform .12s ease-out, box-shadow .25s ease;
   transform-style:preserve-3d; will-change:transform;
 }
+.photo-card.photo-card-lg{ max-width:380px; }
 .photo-card:hover{
   box-shadow:0 28px 55px -18px rgba(20,22,26,0.35);
 }
@@ -127,8 +143,15 @@ nav.links a.active::after{ width:100%; }
 }
 .photo-card .photo:hover .photo-overlay{ opacity:1; }
 .photo-card .caption{ padding:1rem .5rem .4rem; }
-.photo-card .caption b{ font-family:var(--display); font-weight:700; font-size:1rem; display:block;}
+.photo-card .caption b{ font-family:var(--display); font-weight:700; font-size:1rem; display:block; margin-bottom:.5rem;}
 .photo-card .caption span{ font-size:.82rem; color:var(--ink-soft);}
+.linkedin-link{
+  display:inline-flex; align-items:center; gap:.4rem;
+  font-size:.85rem; font-weight:600; color:var(--ink-soft);
+  text-decoration:none; transition:.15s ease;
+}
+.linkedin-link:hover{ color:var(--red); }
+.linkedin-link svg{ flex-shrink:0; }
 
 /* ---------- Section shell ---------- */
 section{ max-width:1200px; margin:0 auto; padding:5rem 1.5rem; }
