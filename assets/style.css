@@ -115,22 +115,20 @@ nav.links a.active::after{ width:100%; }
   aspect-ratio:4/5; border-radius:16px; overflow:hidden;
   background:var(--bg-soft);
   display:flex; align-items:center; justify-content:center;
-  position:relative;
+  position:relative; cursor:pointer;
 }
 .photo-card .photo img{ transition:transform .35s ease; transform:scale(1.001); }
 .photo-card:hover .photo img{ transform:scale(1.07); }
+.photo-overlay{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  gap:.5rem; text-align:center; padding:1.2rem;
+  background:rgba(20,22,26,0.6); color:#fff; font-weight:700; font-size:.9rem;
+  opacity:0; transition:opacity .25s ease; backdrop-filter:blur(1px);
+}
+.photo-card .photo:hover .photo-overlay{ opacity:1; }
 .photo-card .caption{ padding:1rem .5rem .4rem; }
 .photo-card .caption b{ font-family:var(--display); font-weight:700; font-size:1rem; display:block;}
 .photo-card .caption span{ font-size:.82rem; color:var(--ink-soft);}
-.cv-link{
-  display:flex; align-items:center; justify-content:center; gap:.5rem;
-  max-width:260px; margin:.9rem 0 0 auto;
-  font-size:.85rem; font-weight:700; color:var(--ink);
-  text-decoration:none; padding:.75rem 1rem;
-  border:1px solid var(--line); border-radius:100px;
-  background:var(--paper); transition:.2s ease;
-}
-.cv-link:hover{ border-color:var(--red); color:var(--red); box-shadow:0 10px 24px -16px rgba(20,22,26,0.25); transform:translateY(-1px); }
 
 /* ---------- Section shell ---------- */
 section{ max-width:1200px; margin:0 auto; padding:5rem 1.5rem; }
