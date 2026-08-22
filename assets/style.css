@@ -253,17 +253,17 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
 .trace-entries{ margin-bottom:1.5rem; }
 .trace-entries > h4{ font-family:var(--display); font-weight:700; font-size:.85rem; color:var(--red); margin-bottom:1.2rem; }
 .trace-card{
-  display:grid; grid-template-columns:220px 1fr; gap:1.8rem; align-items:start;
+  display:grid; grid-template-columns:340px 1fr; gap:1.8rem; align-items:start;
   background:var(--paper); border:1px solid var(--line); border-radius:16px;
   padding:1.6rem; margin-bottom:1.2rem;
 }
-.trace-card-rev{ grid-template-columns:1fr 220px; }
+.trace-card-rev{ grid-template-columns:1fr 340px; }
 .trace-card-rev .trace-photo-slot{ order:2; }
 .trace-card-rev .trace-text{ order:1; }
 .trace-photo-slot{
   aspect-ratio:4/3; border-radius:12px; background:var(--bg-soft);
   border:1px dashed var(--line); display:flex; align-items:center; justify-content:center;
-  text-align:center; font-size:.78rem; color:var(--ink-soft); padding:.8rem;
+  text-align:center; font-size:.85rem; color:var(--ink-soft); padding:.8rem;
 }
 .trace-tag{
   display:inline-block; font-size:.68rem; font-weight:700; color:var(--red);
