@@ -130,7 +130,8 @@ const competences = [
         ce: "Enrichir l'expérience client par la mesure de la satisfaction client",
         ac: "Optimiser les outils de GRC et le parcours client dans une approche omnicanale",
         title: "Mémoire, grille d'observation du parcours client et étude terrain réalisée chez BUT",
-        comment: "Pour mon mémoire, j'ai étudié le parcours réel des clients en magasin : hésitations, retours en arrière, demandes d'orientation ou difficultés à trouver un rayon. Cette étude m'a permis de dépasser mon ressenti terrain et d'identifier plus précisément les points du parcours qui peuvent être améliorés pour faciliter l'expérience client."
+        comment: "Pour mon mémoire, j'ai étudié le parcours réel des clients en magasin : hésitations, retours en arrière, demandes d'orientation ou difficultés à trouver un rayon. Cette étude m'a permis de dépasser mon ressenti terrain et d'identifier plus précisément les points du parcours qui peuvent être améliorés pour faciliter l'expérience client.",
+        photo: "assets/grille-observation-parcours-client.jpg"
       }
     ]
   },
@@ -206,7 +207,7 @@ if(tabsEl && panelsEl){
         <h4>Traces et commentaires</h4>
         ${c.traceEntries.map((t, idx) => `
           <div class="trace-card ${idx % 2 === 1 ? 'trace-card-rev' : ''}">
-            <div class="trace-photo-slot"><span>📷 Photo à ajouter</span></div>
+            <div class="trace-photo-slot">${t.photo ? `<img src="${t.photo}" alt="${t.title}">` : `<span>📷 Photo à ajouter</span>`}</div>
             <div class="trace-text">
               <span class="trace-tag">Composante essentielle</span>
               <p class="trace-ce">${t.ce}</p>
