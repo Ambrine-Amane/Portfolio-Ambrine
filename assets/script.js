@@ -63,7 +63,11 @@ const competences = [
         title: "Projet Epi-IUT / Agoraé",
         comment: "Epi-IUT a avant tout été créé pour aider les étudiants en difficulté en leur donnant accès à des produits essentiels à prix très réduit. Participer à ce projet m'a permis de travailler sur une offre qui ne recherche pas seulement une performance économique, mais qui répond aussi à un véritable besoin social."
       }
-    ]
+    ],
+    autocritique: {
+      status: "Acquise",
+      text: "J'ai développé cette compétence principalement grâce aux projets réalisés en BUT. Je sais aujourd'hui analyser un marché, comprendre les attentes des consommateurs et proposer des actions adaptées. C'est une compétence que j'utilise toutefois moins au quotidien que la vente ou le pilotage."
+    }
   },
   {
     id: "vente",
@@ -95,7 +99,11 @@ const competences = [
         title: "Vente et conseil client chez BUT",
         comment: "Chaque client étant différent, je ne peux pas utiliser le même discours avec tout le monde. Certains veulent beaucoup de conseils, d'autres savent déjà exactement ce qu'ils recherchent. Mon expérience chez BUT m'a appris à adapter ma façon de communiquer, mes questions et mes arguments selon la personne que j'ai en face de moi."
       }
-    ]
+    ],
+    autocritique: {
+      status: "Maîtrisée",
+      text: "La vente est l'une de mes compétences les plus solides. Mon expérience en magasin m'a permis de progresser dans l'accueil, le conseil, l'argumentation et la fidélisation. Je sais aujourd'hui m'adapter à différents profils de clients."
+    }
   },
   {
     id: "espace-vente",
@@ -133,7 +141,11 @@ const competences = [
         comment: "Pour mon mémoire, j'ai étudié le parcours réel des clients en magasin : hésitations, retours en arrière, demandes d'orientation ou difficultés à trouver un rayon. Cette étude m'a permis de dépasser mon ressenti terrain et d'identifier plus précisément les points du parcours qui peuvent être améliorés pour faciliter l'expérience client.",
         photo: "assets/grille-observation-parcours-client.jpg"
       }
-    ]
+    ],
+    autocritique: {
+      status: "Maîtrisée",
+      text: "C'est la compétence dans laquelle j'ai le plus progressé. Je sais suivre les performances d'un rayon, analyser les indicateurs, gérer les stocks et travailler sur les implantations. C'est aujourd'hui un domaine dans lequel je me sens particulièrement à l'aise."
+    }
   },
   {
     id: "equipe",
@@ -170,7 +182,11 @@ const competences = [
         title: "Organisation de la JPO Epi-IUT",
         comment: "Pour la JPO, nous avons dû nous organiser entre plusieurs pôles autour d'un même objectif. La mise en place d'un planning, la répartition des tâches et la communication entre nous ont permis à chacun de connaître son rôle et d'avancer ensemble jusqu'au jour de l'événement."
       }
-    ]
+    ],
+    autocritique: {
+      status: "En développement",
+      text: "J'ai commencé à développer cette compétence grâce à l'évolution de mes responsabilités. Je sais mieux communiquer, organiser certaines missions et accompagner une équipe. Je souhaite encore progresser dans la délégation et la gestion de situations plus complexes."
+    }
   }
 ];
 
@@ -215,7 +231,7 @@ if(tabsEl && panelsEl){
         <h4>Traces à venir</h4>
         ${c.traces.map(t => `<div class="trace-slot">${t} : <em>à compléter (photos, captures, chiffres, annexes)</em></div>`).join("")}
       </div>`}
-      <p class="autocritique">Autocritique : dans quel autre contexte devrais-je adapter cette compétence ? Quelles ressources me manquent encore ? À rédiger.</p>
+      <p class="autocritique"><b>${c.tab} — ${c.autocritique.status}.</b> ${c.autocritique.text}</p>
     `;
     panelsEl.appendChild(panel);
   });

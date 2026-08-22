@@ -249,6 +249,7 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
 .trace-slot{ border-left:3px solid var(--red-soft); padding:.4rem 0 .4rem 1rem; margin-bottom:.6rem; font-size:.88rem; color:var(--ink-soft); }
 .trace-slot b{ color:var(--ink); font-weight:600; }
 .autocritique{ font-size:.9rem; color:var(--ink-soft); font-style:italic; border-top:1px solid var(--line); padding-top:1.2rem; }
+.autocritique b{ color:var(--red); font-style:normal; }
 
 .trace-entries{ margin-bottom:1.5rem; }
 .trace-entries > h4{ font-family:var(--display); font-weight:700; font-size:.85rem; color:var(--red); margin-bottom:1.2rem; }
