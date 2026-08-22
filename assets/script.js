@@ -194,7 +194,6 @@ if(tabsEl && panelsEl){
     panel.innerHTML = `
       <div class="comp-head">
         <h3>${c.title}</h3>
-        <p>${c.intro}</p>
       </div>
       <div class="ce-grid">
         ${c.essentials.map(e => `
@@ -207,7 +206,7 @@ if(tabsEl && panelsEl){
         <h4>Traces et commentaires</h4>
         ${c.traceEntries.map((t, idx) => `
           <div class="trace-card ${idx % 2 === 1 ? 'trace-card-rev' : ''}">
-            <div class="trace-photo-slot">${t.photo ? `<img src="${t.photo}" alt="${t.title}">` : `<span>📷 Photo à ajouter</span>`}</div>
+            <div class="trace-photo-slot ${t.photo ? 'has-photo' : ''}">${t.photo ? `<img src="${t.photo}" alt="${t.title}">` : `<span>📷 Photo à ajouter</span>`}</div>
             <div class="trace-text">
               <span class="trace-tag">Composante essentielle</span>
               <p class="trace-ce">${t.ce}</p>
