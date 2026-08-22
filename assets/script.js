@@ -195,12 +195,6 @@ if(tabsEl && panelsEl){
       <div class="comp-head">
         <h3>${c.title}</h3>
       </div>
-      <div class="ce-grid">
-        ${c.essentials.map(e => `
-          <div class="ce-item">
-            <div class="ce-label">${e}</div>
-          </div>`).join("")}
-      </div>
       ${c.traceEntries ? `
       <div class="trace-entries">
         <h4>Traces et commentaires</h4>
