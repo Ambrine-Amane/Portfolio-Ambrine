@@ -270,6 +270,12 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
   border-left:4px solid var(--red);
 }
 .chapter.in{ opacity:1; transform:translateY(0); }
+.chapter-split{ display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:start; }
+.chapter-illustration{ width:200px; border-radius:14px; }
+@media (max-width:700px){
+  .chapter-split{ grid-template-columns:1fr; }
+  .chapter-illustration{ width:100%; max-width:260px; margin:0 auto; }
+}
 .chapter-num{
   display:inline-flex; align-items:center; justify-content:center;
   width:2.6rem; height:2.6rem; border-radius:50%;
