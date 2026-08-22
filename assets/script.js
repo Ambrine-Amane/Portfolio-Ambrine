@@ -168,7 +168,8 @@ const competences = [
         ce: "Favoriser l'adhésion à la culture d'entreprise par la transmission des valeurs et des pratiques de l'organisation",
         ac: "Sélectionner les collaborateurs en considérant les besoins de l'équipe et intégrer les collaborateurs à l'équipe",
         title: "Préparation de la passation et création des fiches missions Epi-IUT",
-        comment: "La préparation de la passation nous a obligés à réfléchir à la manière de transmettre notre fonctionnement à la prochaine équipe. Les fiches missions permettent de clarifier les rôles, les méthodes et les responsabilités afin que les nouveaux membres puissent prendre leurs marques plus facilement."
+        comment: "La préparation de la passation nous a obligés à réfléchir à la manière de transmettre notre fonctionnement à la prochaine équipe. Les fiches missions permettent de clarifier les rôles, les méthodes et les responsabilités afin que les nouveaux membres puissent prendre leurs marques plus facilement.",
+        photo: "assets/fiche-poste-epicerie.jpg"
       },
       {
         ce: "Veiller à l'atteinte des objectifs commerciaux par l'équipe",
