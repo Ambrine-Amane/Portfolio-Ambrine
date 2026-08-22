@@ -150,7 +150,26 @@ const competences = [
       "Sélectionner et intégrer les collaborateurs selon les besoins de l'équipe",
       "Valoriser les compétences des membres de l'équipe"
     ],
-    traces: ["Coordination des flux entrants avec le dépôt", "Inventaires tournants et inventaire annuel", "Stage BUT3"]
+    traceEntries: [
+      {
+        ce: "Favoriser l'adhésion à la culture d'entreprise par la transmission des valeurs et des pratiques de l'organisation",
+        ac: "Sélectionner les collaborateurs en considérant les besoins de l'équipe et intégrer les collaborateurs à l'équipe",
+        title: "Préparation de la passation et création des fiches missions Epi-IUT",
+        comment: "La préparation de la passation nous a obligés à réfléchir à la manière de transmettre notre fonctionnement à la prochaine équipe. Les fiches missions permettent de clarifier les rôles, les méthodes et les responsabilités afin que les nouveaux membres puissent prendre leurs marques plus facilement."
+      },
+      {
+        ce: "Veiller à l'atteinte des objectifs commerciaux par l'équipe",
+        ac: "Fixer les objectifs en accord avec la méthode SMART",
+        title: "Suivi d'un objectif commercial chiffré de mon rayon chez BUT",
+        comment: "Chez BUT, je suis régulièrement les résultats du rayon pour voir où nous en sommes par rapport aux objectifs fixés. Cela permet de savoir rapidement sur quels points nous devons nous concentrer et d'adapter nos priorités avant la fin de la période."
+      },
+      {
+        ce: "Veiller à l'atteinte des objectifs commerciaux par l'équipe",
+        ac: "Fédérer les équipes autour de l'atteinte des objectifs",
+        title: "Organisation de la JPO Epi-IUT",
+        comment: "Pour la JPO, nous avons dû nous organiser entre plusieurs pôles autour d'un même objectif. La mise en place d'un planning, la répartition des tâches et la communication entre nous ont permis à chacun de connaître son rôle et d'avancer ensemble jusqu'au jour de l'événement."
+      }
+    ]
   }
 ];
 
