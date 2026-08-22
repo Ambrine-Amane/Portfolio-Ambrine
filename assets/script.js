@@ -44,7 +44,26 @@ const competences = [
       "Faire évoluer l'offre à l'aide de leviers de création de valeur",
       "Intégrer la RSE dans la stratégie de l'offre"
     ],
-    traces: ["SAE Semestre 5", "TD ressources marketing", "Stage / alternance BUT3"]
+    traceEntries: [
+      {
+        ce: "Analyser les ressources et compétences de l'entreprise",
+        ac: "Élaborer une stratégie marketing dans un environnement instable",
+        title: "Business Game — Groupe Rouge",
+        comment: "Pendant le Business Game, notre stratégie a évolué au fil des résultats obtenus. À chaque tour, nous analysions nos performances avant de décider ce qu'il fallait maintenir ou modifier. J'ai ainsi appris à ne pas rester sur une stratégie fixe et à m'adapter aux résultats."
+      },
+      {
+        ce: "Élaborer un mix adapté à la cible et positionné par rapport aux concurrents",
+        ac: "Faire évoluer l'offre à l'aide de leviers de création de valeur",
+        title: "Epi-IUT, adaptation de l'offre",
+        comment: "Avec Epi-IUT, nous devions proposer une offre qui corresponde réellement aux besoins des étudiants. Le suivi des produits, des besoins et des approvisionnements nous permettait d'ajuster ce qui était proposé dans l'épicerie et de rendre l'offre plus adaptée."
+      },
+      {
+        ce: "Adopter une posture citoyenne, éthique et écologique",
+        ac: "Intégrer la RSE dans la stratégie de l'offre",
+        title: "Projet Epi-IUT / Agoraé",
+        comment: "Epi-IUT a avant tout été créé pour aider les étudiants en difficulté en leur donnant accès à des produits essentiels à prix très réduit. Participer à ce projet m'a permis de travailler sur une offre qui ne recherche pas seulement une performance économique, mais qui répond aussi à un véritable besoin social."
+      }
+    ]
   },
   {
     id: "vente",
@@ -63,7 +82,20 @@ const competences = [
       "Élaborer des outils de gestion et de calcul efficaces (facture, échéancier, devis) pour la vente complexe",
       "Maîtriser les codes propres à l'univers spécifique rencontré"
     ],
-    traces: ["Oral de négociation", "Stage BUT3", "Jeu Négociales"]
+    traceEntries: [
+      {
+        ce: "Respecter les étapes de la négociation commerciale et une démarche éthique",
+        ac: "Maîtriser les codes propres à l'univers spécifique rencontré",
+        title: "Mon expérience en vente chez BUT",
+        comment: "Travailler au petit meuble m'a demandé de bien connaître les produits pour pouvoir répondre aux différentes attentes des clients. Avec l'expérience, j'ai appris à identifier rapidement les critères importants pour chacun et à proposer une solution réellement adaptée."
+      },
+      {
+        ce: "Respecter les étapes de la négociation commerciale et une démarche éthique",
+        ac: "Adapter sa communication verbale et non verbale à la situation commerciale",
+        title: "Vente et conseil client chez BUT",
+        comment: "Chaque client étant différent, je ne peux pas utiliser le même discours avec tout le monde. Certains veulent beaucoup de conseils, d'autres savent déjà exactement ce qu'ils recherchent. Mon expérience chez BUT m'a appris à adapter ma façon de communiquer, mes questions et mes arguments selon la personne que j'ai en face de moi."
+      }
+    ]
   },
   {
     id: "espace-vente",
@@ -138,10 +170,26 @@ if(tabsEl && panelsEl){
         <h4>Apprentissages critiques mobilisés</h4>
         ${c.criticalLearnings.map(a => `<div class="trace-slot"><b>${a}</b></div>`).join("")}
       </div>
+      ${c.traceEntries ? `
+      <div class="trace-entries">
+        <h4>Traces et commentaires</h4>
+        ${c.traceEntries.map((t, idx) => `
+          <div class="trace-card ${idx % 2 === 1 ? 'trace-card-rev' : ''}">
+            <div class="trace-photo-slot"><span>📷 Photo à ajouter</span></div>
+            <div class="trace-text">
+              <span class="trace-tag">Composante essentielle</span>
+              <p class="trace-ce">${t.ce}</p>
+              <span class="trace-tag">Apprentissage critique</span>
+              <p class="trace-ac">${t.ac}</p>
+              <h5 class="trace-title">${t.title}</h5>
+              <p class="trace-comment">${t.comment}</p>
+            </div>
+          </div>`).join("")}
+      </div>` : `
       <div class="traces">
         <h4>Traces à venir</h4>
         ${c.traces.map(t => `<div class="trace-slot">${t} : <em>à compléter (photos, captures, chiffres, annexes)</em></div>`).join("")}
-      </div>
+      </div>`}
       <p class="autocritique">Autocritique : dans quel autre contexte devrais-je adapter cette compétence ? Quelles ressources me manquent encore ? À rédiger.</p>
     `;
     panelsEl.appendChild(panel);
