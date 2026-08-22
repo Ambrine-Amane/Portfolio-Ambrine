@@ -99,7 +99,7 @@ const competences = [
   },
   {
     id: "espace-vente",
-    tab: "Espace de vente",
+    tab: "Retail",
     title: "Piloter un espace de vente",
     intro: "Compétence évaluée sur les semestres 5 et 6.",
     essentials: [
@@ -113,11 +113,30 @@ const competences = [
       "Implanter un plan de merchandising défini par le réseau ou l'équipe de vente",
       "Optimiser les outils de GRC et le parcours client dans une approche omnicanale"
     ],
-    traces: ["Gestion du rayon Petit Meuble", "Décisions d'implantation, rayon Électroménager", "Ajustement des niveaux de stock"]
+    traceEntries: [
+      {
+        ce: "Développer l'attractivité commerciale de l'espace de vente pour optimiser les indicateurs commerciaux",
+        ac: "Élaborer une stratégie commerciale en cohérence avec l'environnement concurrentiel",
+        title: "Mémoire, diagnostic du parcours client et propositions d'amélioration",
+        comment: "Mon mémoire part d'un constat réalisé directement en magasin : le parcours imposé permet de faire découvrir l'ensemble de l'offre, mais peut aussi créer des difficultés d'orientation. J'ai donc travaillé sur des pistes comme la signalétique et des parcours plus adaptés aux besoins des clients afin de rendre le magasin plus agréable et plus efficace."
+      },
+      {
+        ce: "Développer l'attractivité commerciale de l'espace de vente pour optimiser les indicateurs commerciaux",
+        ac: "Implanter un plan de merchandising défini par le réseau ou par l'équipe de vente",
+        title: "Photo avant/après d'une implantation réalisée chez BUT",
+        comment: "Pendant mon alternance, j'ai participé à différentes implantations en suivant les préconisations de l'enseigne et les besoins du rayon. J'ai pu voir concrètement qu'une implantation claire et attractive joue directement sur la visibilité des produits et la facilité avec laquelle le client se repère."
+      },
+      {
+        ce: "Enrichir l'expérience client par la mesure de la satisfaction client",
+        ac: "Optimiser les outils de GRC et le parcours client dans une approche omnicanale",
+        title: "Mémoire, grille d'observation du parcours client et étude terrain réalisée chez BUT",
+        comment: "Pour mon mémoire, j'ai étudié le parcours réel des clients en magasin : hésitations, retours en arrière, demandes d'orientation ou difficultés à trouver un rayon. Cette étude m'a permis de dépasser mon ressenti terrain et d'identifier plus précisément les points du parcours qui peuvent être améliorés pour faciliter l'expérience client."
+      }
+    ]
   },
   {
     id: "equipe",
-    tab: "Équipe",
+    tab: "Management",
     title: "Manager une équipe commerciale sur un espace de vente",
     intro: "Compétence évaluée sur les semestres 5 et 6.",
     essentials: [
