@@ -199,14 +199,7 @@ if(tabsEl && panelsEl){
         ${c.essentials.map(e => `
           <div class="ce-item">
             <div class="ce-label">${e}</div>
-            <div class="level">
-              <span>Non</span><span>Peu</span><span class="set">Assez</span><span>Bien</span>
-            </div>
           </div>`).join("")}
-      </div>
-      <div class="traces">
-        <h4>Apprentissages critiques mobilisés</h4>
-        ${c.criticalLearnings.map(a => `<div class="trace-slot"><b>${a}</b></div>`).join("")}
       </div>
       ${c.traceEntries ? `
       <div class="trace-entries">
