@@ -55,7 +55,8 @@ const competences = [
         ce: "Élaborer un mix adapté à la cible et positionné par rapport aux concurrents",
         ac: "Faire évoluer l'offre à l'aide de leviers de création de valeur",
         title: "Epi-IUT, adaptation de l'offre",
-        comment: "Avec Epi-IUT, nous devions proposer une offre qui corresponde réellement aux besoins des étudiants. Le suivi des produits, des besoins et des approvisionnements nous permettait d'ajuster ce qui était proposé dans l'épicerie et de rendre l'offre plus adaptée."
+        comment: "Avec Epi-IUT, nous devions proposer une offre qui corresponde réellement aux besoins des étudiants. Le suivi des produits, des besoins et des approvisionnements nous permettait d'ajuster ce qui était proposé dans l'épicerie et de rendre l'offre plus adaptée.",
+        photo: "assets/commande-revivre.jpg"
       },
       {
         ce: "Adopter une posture citoyenne, éthique et écologique",
