@@ -231,7 +231,7 @@ if(tabsEl && panelsEl){
         <h4>Traces à venir</h4>
         ${c.traces.map(t => `<div class="trace-slot">${t} : <em>à compléter (photos, captures, chiffres, annexes)</em></div>`).join("")}
       </div>`}
-      <p class="autocritique"><b>${c.tab} — ${c.autocritique.status}.</b> ${c.autocritique.text}</p>
+      <p class="autocritique"><b>${c.tab} : ${c.autocritique.status}.</b> ${c.autocritique.text}</p>
     `;
     panelsEl.appendChild(panel);
   });
