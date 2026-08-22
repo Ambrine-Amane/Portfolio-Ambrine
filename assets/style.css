@@ -253,30 +253,29 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
 .trace-entries{ margin-bottom:1.5rem; }
 .trace-entries > h4{ font-family:var(--display); font-weight:700; font-size:.85rem; color:var(--red); margin-bottom:1.2rem; }
 .trace-card{
-  display:grid; grid-template-columns:1.3fr 1fr; gap:1.8rem; align-items:stretch;
-  background:var(--paper); border:1px solid var(--line); border-radius:16px;
-  padding:1.6rem; margin-bottom:1.2rem; overflow:hidden;
+  display:grid; grid-template-columns:1.3fr 1fr; gap:1.4rem; align-items:stretch;
+  margin-bottom:1.2rem;
 }
 .trace-card-rev{ grid-template-columns:1fr 1.3fr; }
 .trace-card-rev .trace-photo-slot{ order:2; }
 .trace-card-rev .trace-text{ order:1; }
+.trace-text{
+  background:var(--paper); border:1px solid var(--line); border-radius:16px;
+  padding:1.6rem;
+}
 .trace-photo-slot{
-  aspect-ratio:3/4; border-radius:12px; background:var(--bg-soft);
+  aspect-ratio:3/4; border-radius:16px; background:var(--bg-soft);
   border:1px dashed var(--line); display:flex; align-items:center; justify-content:center;
   text-align:center; font-size:.85rem; color:var(--ink-soft); padding:.8rem;
   overflow:hidden; align-self:start;
 }
 .trace-photo-slot.has-photo{
-  aspect-ratio:auto; border:none; background:transparent; padding:0;
-  align-self:stretch; margin:-1.6rem 0 -1.6rem -1.6rem;
-  border-radius:16px 0 0 16px;
-}
-.trace-card-rev .trace-photo-slot.has-photo{
-  margin:-1.6rem -1.6rem -1.6rem 0;
-  border-radius:0 16px 16px 0;
+  aspect-ratio:auto; border:1px solid var(--line); background:var(--paper); padding:0;
+  align-self:stretch;
+  box-shadow:0 14px 30px -20px rgba(20,22,26,0.25);
 }
 .trace-photo-slot img{ width:100%; height:100%; display:block; }
-.trace-photo-slot.has-photo img{ object-fit:cover; border-radius:inherit; }
+.trace-photo-slot.has-photo img{ object-fit:cover; border-radius:15px; }
 .trace-tag{
   display:inline-block; font-size:.68rem; font-weight:700; color:var(--red);
   text-transform:uppercase; letter-spacing:.04em; margin-bottom:.3rem; margin-top:.8rem;
@@ -289,11 +288,7 @@ h2.section-title{ font-family:var(--display); font-weight:700; font-size:clamp(1
   .trace-card, .trace-card-rev{ grid-template-columns:1fr; }
   .trace-card-rev .trace-photo-slot, .trace-card-rev .trace-text{ order:initial; }
   .trace-photo-slot{ aspect-ratio:16/9; }
-  .trace-photo-slot.has-photo, .trace-card-rev .trace-photo-slot.has-photo{
-    margin:-1.6rem -1.6rem 1.4rem -1.6rem;
-    border-radius:16px 16px 0 0;
-    aspect-ratio:16/9;
-  }
+  .trace-photo-slot.has-photo{ aspect-ratio:16/9; }
 }
 
 /* ---------- Story (À propos) — chapters + sticky nav ---------- */
